@@ -1,0 +1,534 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shohibul Islam Siam - Portfolio</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- remixicon cdn -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.9.1/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <!-- font awesome cnd -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.3.1/css/all.min.css"
+      integrity="sha512-QeR2VH+lsBE5LSAe1Q5EnTBbe7XTBubt8dG93Y7gidSgdMCr8nVqKcfKAMyN96SV8KDbZVTDXChatu5G2KQGzg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Azeret+Mono:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+      body {
+        background-color: #0a0a0a;
+        color: #ffffff;
+        font-family: "Poppins", sans-serif;
+        user-select: none;
+      }
+
+      .btns {
+        background-color: #ffffff;
+        color: #0a0a0a;
+        font-weight: 500;
+        border-radius: 50px;
+        padding: 8px 24px;
+        border: 1px solid #ffffff;
+        text-decoration: none;
+        display: inline-block;
+        transition: opacity 0.2s ease-in-out;
+      }
+
+      .btns:hover {
+        background-color: #e6e6e6;
+        color: #0a0a0a;
+        opacity: 0.9;
+      }
+
+      .badge {
+        background-color: #333333;
+      }
+
+      .form-control-dark {
+        background-color: #161616;
+        border: 1px solid #333333;
+        color: #ffffff;
+      }
+
+      .social-link {
+        color: #ffffff;
+        font-size: 1.8rem;
+        text-decoration: none;
+        transition: opacity 0.2s;
+      }
+
+      .social-link:hover {
+        color: #cccccc;
+      }
+    </style>
+  </head>
+  <body>
+    <!-- nav section -->
+    <nav class="navbar navbar-dark py-3 fixed-top" style="background: rgb(10, 10, 10, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+      <div class="container">
+        <a class="navbar-brand fw-bold fs-4 text-white" href="#"
+          >Shohibul Islam</a
+        >
+        <div class="ms-auto d-flex align-items-center gap-3">
+          <ul
+            class="navbar-nav d-none d-lg-flex ms-auto flex-row align-items-center gap-3 mb-0"
+          >
+            <li class="nav-item">
+              <a class="nav-link active text-white" href="#home">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects">Project</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#skills">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#education">Education</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#contact">Contact</a>
+            </li>
+          </ul>
+          <a
+            href="others/resume.pdf"
+            download="Shohibul_Islam_Siam_Resume.pdf"
+            class="btn btns ms-lg-2"
+            >Resume</a
+          >
+        </div>
+      </div>
+    </nav>
+
+    <!-- hero section -->
+    <section id="home" class="py-5" style="margin-top: 140px;">
+      <div class="container">
+        <div class="row align-items-center g-4">
+          <div class="col-12 col-md-6 text-center text-md-start">
+            <h1 class="fw-bold mb-3">
+              Assalamu Alaikum,<br />I'm Shohibul Islam Siam
+            </h1>
+            <h4 class="text-secondary mb-4 fw-light">
+              Competitive Programming | Frontend Development
+            </h4>
+            <p class="lead text-light mb-4 fw-light" >
+              Aspiring Software Engineer bridging fundamentals and
+              problem-solving. Experienced in C++ and competitive programming
+              with a solid grasp of core computer science concepts.
+            </p>
+
+            <div
+              class="d-flex justify-content-center justify-content-md-start gap-4 mt-4"
+            >
+              <a
+                href="https://github.com/shohibulislam"
+                target="_blank"
+                class="social-link"
+                title="GitHub"
+                ><i class="ri-github-line"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/shohibul-islam-siam/"
+                target="_blank"
+                class="social-link"
+                title="LinkedIn"
+                ><i class="ri-linkedin-line"></i
+              ></a>
+              <a
+                href="mailto:shohibul602@gmail.com"
+                target="_blank"
+                class="social-link"
+                title="Email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+          </div>
+
+          <div class="col-12 col-md-6 text-center text-md-end">
+            <img
+              src="imgs/me.png"
+              alt="Shohibul Islam Siam"
+              class="img-fluid"
+              style="
+                max-width: 320px;
+                width: 100%;
+                object-fit: cover;
+                box-shadow: 6px 6px 0 #666666;
+              "
+            />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- about -->
+    <section id="about" class="py-5">
+      <div class="container">
+        <h4 class="fw-light mb-4">About Me</h4>
+        <div
+          class="p-4 rounded-3"
+          style="background-color: #141414; color: #c7c7cc"
+        >
+          <p>
+            I'm Shohibul Islam Siam. A final-year Computer Science Diploma
+            Student at Daffodil Polytechnic Institute, based in Bangladesh.
+          </p>
+          <p>
+            As a career, Software Engineering was my first choice. To get there,
+            I started my programming journey with C language to learn all the
+            fundamentals. Then I focused on problem solving and competitive
+            programming with C++. Actively solving problems on few platforms
+            <a
+              href="https://codeforces.com/profile/shohibul602"
+              target="_blank"
+              class="text-white text-decoration-underline"
+              >Codeforces</a
+            >,
+            <a
+              href="https://www.codechef.com/users/shohibul602"
+              target="_blank"
+              class="text-white text-decoration-underline"
+              >CodeChef</a
+            >,
+            <a
+              href="https://leetcode.com/u/shohibul/"
+              target="_blank"
+              class="text-white text-decoration-underline"
+              >LeetCode</a
+            >. Along the way, I have gathered basic data structures and
+            algorithms knowledge.
+          </p>
+          <p>
+            With all this mixed knowledge of mine, I'm currently looking for a
+            Software Development internship to begin my professional journey.
+          </p>
+          <p class="mb-0">
+            Feel free to connect, I would love to hear from you.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+    <section id="projects" class="py-5">
+      <div class="container">
+        <h4 class="fw-light mb-4">Projects</h4>
+        <div class="row g-4">
+          <!-- 1 -->
+          <div class="col-md-6">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border: 1px solid #2c2c2c;
+                background-color: #141414 !important;
+              "
+            >
+              <img
+                src="imgs/project_1.png"
+                class="card-img-top"
+                alt="project 1 thumbnail"
+              />
+              <div class="card-body d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0 fw-light">
+                    Portfolio Web Project
+                  </h5>
+                  <a
+                    href="https://shohibul-islam-siam.vercel.app/"
+                    target="_blank"
+                    class="text-white ms-2"
+                    title="Live Preview"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+                  </a>
+                </div>
+                <p class="card-text mt-2 text-secondary">
+                  A responsive portfolio website built with HTML5, CSS3, and
+                  Tailwind CSS v4. Demonstrates clean UI architecture and modern
+                  front-end practices.
+                </p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
+                    HTML
+                  </span>
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >Tailwind CSS</span
+                  >
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >JavaScript</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 2 -->
+          <div class="col-md-6">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border: 1px solid #2c2c2c;
+                background-color: #141414 !important;
+              "
+            >
+              <img
+                src="imgs/project_2.png"
+                class="card-img-top"
+                alt="project 2 thumbnail"
+              />
+              <div class="card-body d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0 fw-light">Tic Tac Toe</h5>
+                  <a
+                    href="https://shohibulislam.github.io/tic-tac-toe/"
+                    target="_blank"
+                    class="text-white ms-2"
+                    title="Live Preview"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+                  </a>
+                </div>
+                <p class="card-text mt-2 text-secondary">
+                  A responsive, and browser-based Tic-Tac-Toe website. Real-time turn tracking,
+                  win/tie detection with visual highlights, and game resets
+                  management.
+                </p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
+                    HTML
+                  </span>
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >Tailwind CSS</span
+                  >
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >JavaScript</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 3 -->
+          <div class="col-md-6">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border: 1px solid #2c2c2c;
+                background-color: #141414 !important;
+              "
+            >
+              <img
+                src="imgs/project_3.png"
+                class="card-img-top"
+                alt="project 3 thumbnail"
+              />
+              <div class="card-body d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0 fw-light">Rock Paper Scissors</h5>
+                  <a
+                    href="https://shohibulislam.github.io/rock-paper-scissors/"
+                    target="_blank"
+                    class="text-white ms-2"
+                    title="Live Preview"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+                  </a>
+                </div>
+                <p class="card-text mt-2 text-secondary">
+                  An interactive Rock Paper Scissors website. Dynamic button states, a
+                  randomized computer opponent, and real-time game outcome
+                  tracking via a clean scoreboard interface.
+                </p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
+                    HTML
+                  </span>
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >Tailwind CSS v4</span
+                  >
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >JavaScript</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4 -->
+          <div class="col-md-6">
+            <div
+              class="card bg-dark text-white h-100"
+              style="
+                border: 1px solid #2c2c2c;
+                background-color: #141414 !important;
+              "
+            >
+              <img
+                src="imgs/project_4.png"
+                class="card-img-top"
+                alt="project 4 thumbnail"
+              />
+              <div class="card-body d-flex flex-column">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-2"
+                >
+                  <h5 class="card-title mb-0 fw-light">
+                    Random Color Generator
+                  </h5>
+                  <a
+                    href="https://shohibulislam.github.io/random-color-generator/"
+                    target="_blank"
+                    class="text-white ms-2"
+                    title="Live Preview"
+                  >
+                    <i class="fa-solid fa-arrow-up-right-from-square fs-6"></i>
+                  </a>
+                </div>
+                <p class="card-text mt-2 text-secondary">
+                  An interactive Random Color Generator. Generates random RGB and HEX
+                  color codes on click, computes dynamic text contrast for
+                  optimal readability, and a built-in dark/light theme toggle.
+                </p>
+                <div class="d-flex flex-wrap gap-1">
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
+                    HTML
+                  </span>
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
+                    Tailwind CSS
+                  </span>
+                  <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+                    >JavaScript</span
+                  >
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- skills -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h4 class="fw-light mb-4">Skills</h2>
+            <div class="row g-4">
+                <div class="col-md-4">
+                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
+                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-code me-2"></i>Languages</h5>
+                        <p class="text-secondary mb-0">C / C++, JavaScript ES6</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
+                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-laptop-code me-2"></i>Frontend</h5>
+                        <p class="text-secondary mb-0">HTML5, CSS3, Tailwind CSS v4, Bootstrap 5</p>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
+                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-wrench me-2"></i>Tools</h5>
+                        <p class="text-secondary mb-0">Git, GitHub, Vercel</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- edu -->
+    <section id="education" class="py-5">
+        <div class="container">
+            <h4 class="fw-light mb-4">Education</h4>
+            <div class="p-4 rounded-3" style="background-color: #141414;">
+                <div class="d-flex justify-content-between align-items-center flex-wrap">
+                    <div>
+                        <h4 class="fw-light mb-1">Daffodil Polytechnic Institute</h4>
+                        <p class="text-secondary mb-0">Diploma in Engineering in Computer Technology</p>
+                    </div>
+                    <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">Feb 2023 - Present</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- contact -->
+    <section id="contact" class="py-5">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-lg-12">
+                    <h4 class="fw-light mb-4">Contact Me</h4>
+                    <form class="p-4 rounded-3" style="background-color: #141414;">
+                        <div class="mb-3">
+                            <label for="name" class="form-label">Name</label>
+                            <input type="text" class="form-control form-control-dark p-3" id="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control form-control-dark p-3" id="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="mb-4">
+                            <label for="message" class="form-label">Message</label>
+                            <textarea class="form-control form-control-dark p-3" style="max-height: 400px; min-height: 100px;" id="message" rows="5" placeholder="Your Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btns d-block mx-auto py-3">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- footer -->
+    <footer class="py-4 text-center">
+        <div class="container">
+            <div class="d-flex justify-content-center gap-4 mb-3">
+                <a
+                href="https://github.com/shohibulislam"
+                target="_blank"
+                class="social-link fs-5"
+                title="GitHub"
+                ><i class="ri-github-line"></i
+              ></a>
+              <a
+                href="https://www.linkedin.com/in/shohibul-islam-siam/"
+                target="_blank"
+                class="social-link fs-5"
+                title="LinkedIn"
+                ><i class="ri-linkedin-line"></i
+              ></a>
+              <a
+                href="mailto:shohibul602@gmail.com"
+                target="_blank"
+                class="social-link fs-5"
+                title="Email"
+                ><i class="ri-mail-line"></i
+              ></a>
+            </div>
+            <p class="text-secondary mb-0">&copy; <span id="year">0000</span> Shohibul Islam Siam. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="script.js"></script>
+  </body>
+</html>
