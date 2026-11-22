@@ -31,7 +31,6 @@
         background-color: #0a0a0a;
         color: #ffffff;
         font-family: "Poppins", sans-serif;
-        user-select: none;
       }
 
       .btns {
@@ -62,6 +61,14 @@
         color: #ffffff;
       }
 
+      .form-control-dark:focus {
+        background-color: #161616;
+        border-color: #333333;
+        color: #ffffff;
+        box-shadow: none;
+        outline: none;
+      }
+
       .social-link {
         color: #ffffff;
         font-size: 1.8rem;
@@ -72,11 +79,15 @@
       .social-link:hover {
         color: #cccccc;
       }
+
+      section[id]{
+        scroll-margin-top: 85px;
+      }
     </style>
   </head>
   <body>
     <!-- nav section -->
-    <nav class="navbar navbar-dark py-3 fixed-top" style="background: rgb(10, 10, 10, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+    <nav class="navbar navbar-dark py-3 fixed-top" style="background: rgba(10, 10, 10, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
       <div class="container">
         <a class="navbar-brand fw-bold fs-4 text-white" href="#"
           >Shohibul Islam</a
@@ -89,16 +100,16 @@
               <a class="nav-link active text-white" href="#home">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link text-white" href="#projects">Project</a>
+              <a class="nav-link text-white" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link text-white" href="#projects">Projects</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#skills">Skills</a>
             </li>
             <li class="nav-item">
               <a class="nav-link text-white" href="#education">Education</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link text-white" href="#contact">Contact</a>
             </li>
           </ul>
           <a
@@ -147,7 +158,6 @@
               ></a>
               <a
                 href="mailto:shohibul602@gmail.com"
-                target="_blank"
                 class="social-link"
                 title="Email"
                 ><i class="ri-mail-line"></i
@@ -188,7 +198,7 @@
             As a career, Software Engineering was my first choice. To get there,
             I started my programming journey with C language to learn all the
             fundamentals. Then I focused on problem solving and competitive
-            programming with C++. Actively solving problems on few platforms
+            programming with C++. Actively solving problems on a few platforms
             <a
               href="https://codeforces.com/profile/shohibul602"
               target="_blank"
@@ -304,7 +314,7 @@
                   </a>
                 </div>
                 <p class="card-text mt-2 text-secondary">
-                  A responsive, and browser-based Tic-Tac-Toe website. Real-time turn tracking,
+                  A responsive browser-based Tic-Tac-Toe website. Real-time turn tracking,
                   win/tie detection with visual highlights, and game resets
                   management.
                 </p>
@@ -361,7 +371,7 @@
                     HTML
                   </span>
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
-                    >Tailwind CSS v4</span
+                    >Tailwind CSS</span
                   >
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
                     >JavaScript</span
@@ -404,7 +414,7 @@
                 <p class="card-text mt-2 text-secondary">
                   An interactive Random Color Generator. Generates random RGB and HEX
                   color codes on click, computes dynamic text contrast for
-                  optimal readability, and a built-in dark/light theme toggle.
+                  optimal readability, includes a built-in dark/light theme toggle.
                 </p>
                 <div class="d-flex flex-wrap gap-1">
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
@@ -427,7 +437,7 @@
     <!-- skills -->
     <section id="skills" class="py-5">
         <div class="container">
-            <h4 class="fw-light mb-4">Skills</h2>
+            <h4 class="fw-light mb-4">Skills</h4>
             <div class="row g-4">
                 <div class="col-md-4">
                     <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
@@ -473,21 +483,30 @@
             <div class="row justify-content-center">
                 <div class="col-lg-12">
                     <h4 class="fw-light mb-4">Contact Me</h4>
-                    <form action="https://api.web3forms.com/submit" method="POST" class="p-4 rounded-3" style="background-color: #141414;">
+                    <form action="https://api.web3forms.com/submit" method="POST" novalidate class="p-4 rounded-3" style="background-color: #141414;">
                         <input type="hidden" name="access_key" value="4170eb6e-29a1-4f5c-8b4b-526bee84a397">
                         <div class="mb-3">
-                            <label for="name" class="form-label">Name</label>
-                            <input type="text" name="name" class="form-control form-control-dark p-3" id="name" placeholder="Your Name" required>
+                            <label for="nameInput" class="form-label">Name</label>
+                            <input id="nameInput" type="text" name="name" autocomplete="off" class="form-control form-control-dark p-3" placeholder="Your Name" required>
                         </div>
                         <div class="mb-3">
-                            <label for="email" class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control form-control-dark p-3" id="email" placeholder="Your Email" required>
+                            <label for="emailInput" class="form-label">Email</label>
+                            <input id="emailInput" type="email" name="email" autocomplete="off" class="form-control form-control-dark p-3" placeholder="Your Email" required>
                         </div>
                         <div class="mb-4">
-                            <label for="message" class="form-label">Message</label>
-                            <textarea name="message" class="form-control form-control-dark p-3" style="max-height: 400px; min-height: 100px;" id="message" rows="5" placeholder="Your Message" required></textarea>
+                          <div class="d-flex justify-content-between align-items-center mb-1">
+                            <label for="textInput" class="form-label">Message</label>
+                            <small id="msg-counter" style="color: #9ca3af;">0 / 2,000 (min 10)</small>
+                          </div>
+                            <textarea id="textInput" minlength="10" maxlength="2000" name="message" autocomplete="off" class="form-control form-control-dark p-3" style="max-height: 400px; min-height: 100px;" rows="5" placeholder="Your Message" required></textarea>
                         </div>
-                        <button type="submit" class="btn btns d-block mx-auto py-3">Send Message</button>
+                        <div
+                          id="msg-box"
+                          aria-live="polite"
+                          class="text-center"
+                          style="height: 45px; transition: opacity 0.2s ease-in-out;"
+                        ></div>
+                        <button id="send-btn" type="submit" class="btn btns d-block mx-auto py-3">Send Message</button>
                     </form>
                 </div>
             </div>
@@ -514,13 +533,12 @@
               ></a>
               <a
                 href="mailto:shohibul602@gmail.com"
-                target="_blank"
                 class="social-link fs-5"
                 title="Email"
                 ><i class="ri-mail-line"></i
               ></a>
             </div>
-            <p class="text-secondary mb-0">&copy; <span id="year">0000</span> Shohibul Islam Siam. All rights reserved.</p>
+            <p class="text-secondary mb-0">&copy; <span id="year">0000</span> Shohibul Islam Siam. <a class="text-secondary" target="_blank" href="https://www.github.com/shohibulislam/">Github</a></p>
         </div>
     </footer>
 
