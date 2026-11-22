@@ -80,14 +80,37 @@
         color: #cccccc;
       }
 
-      section[id]{
+      section[id] {
         scroll-margin-top: 85px;
+      }
+
+      #home {
+        margin-top: 4.5rem;
+      }
+
+      @media (min-width: 768px) {
+        #home {
+          margin-top: 6rem;
+        }
+      }
+
+      @media (min-width: 992px) {
+        #home {
+          margin-top: 7.5rem;
+        }
       }
     </style>
   </head>
   <body>
     <!-- nav section -->
-    <nav class="navbar navbar-dark py-3 fixed-top" style="background: rgba(10, 10, 10, 0.7); backdrop-filter: blur(10px); -webkit-backdrop-filter: blur(10px);">
+    <nav
+      class="navbar navbar-dark py-3 fixed-top"
+      style="
+        background: rgba(10, 10, 10, 0.7);
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+      "
+    >
       <div class="container">
         <a class="navbar-brand fw-bold fs-4 text-white" href="#"
           >Shohibul Islam</a
@@ -123,7 +146,7 @@
     </nav>
 
     <!-- hero section -->
-    <section id="home" class="py-5" style="margin-top: 140px;">
+    <section id="home" class="py-5">
       <div class="container">
         <div class="row align-items-center g-4">
           <div class="col-12 col-md-6 text-center text-md-start">
@@ -133,7 +156,7 @@
             <h4 class="text-secondary mb-4 fw-light">
               Competitive Programming | Frontend Development
             </h4>
-            <p class="lead text-light mb-4 fw-light" >
+            <p class="lead text-light mb-4 fw-light">
               Aspiring Software Engineer bridging fundamentals and
               problem-solving. Experienced in C++ and competitive programming
               with a solid grasp of core computer science concepts.
@@ -314,9 +337,9 @@
                   </a>
                 </div>
                 <p class="card-text mt-2 text-secondary">
-                  A responsive browser-based Tic-Tac-Toe website. Real-time turn tracking,
-                  win/tie detection with visual highlights, and game resets
-                  management.
+                  A responsive browser-based Tic-Tac-Toe website. Real-time turn
+                  tracking, win/tie detection with visual highlights, and game
+                  resets management.
                 </p>
                 <div class="d-flex flex-wrap gap-1">
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
@@ -362,9 +385,9 @@
                   </a>
                 </div>
                 <p class="card-text mt-2 text-secondary">
-                  An interactive Rock Paper Scissors website. Dynamic button states, a
-                  randomized computer opponent, and real-time game outcome
-                  tracking via a clean scoreboard interface.
+                  An interactive Rock Paper Scissors website. Dynamic button
+                  states, a randomized computer opponent, and real-time game
+                  outcome tracking via a clean scoreboard interface.
                 </p>
                 <div class="d-flex flex-wrap gap-1">
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
@@ -412,9 +435,10 @@
                   </a>
                 </div>
                 <p class="card-text mt-2 text-secondary">
-                  An interactive Random Color Generator. Generates random RGB and HEX
-                  color codes on click, computes dynamic text contrast for
-                  optimal readability, includes a built-in dark/light theme toggle.
+                  An interactive Random Color Generator. Generates random RGB
+                  and HEX color codes on click, computes dynamic text contrast
+                  for optimal readability, includes a built-in dark/light theme
+                  toggle.
                 </p>
                 <div class="d-flex flex-wrap gap-1">
                   <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">
@@ -436,110 +460,179 @@
 
     <!-- skills -->
     <section id="skills" class="py-5">
-        <div class="container">
-            <h4 class="fw-light mb-4">Skills</h4>
-            <div class="row g-4">
-                <div class="col-md-4">
-                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
-                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-code me-2"></i>Languages</h5>
-                        <p class="text-secondary mb-0">C / C++, JavaScript ES6</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
-                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-laptop-code me-2"></i>Frontend</h5>
-                        <p class="text-secondary mb-0">HTML5, CSS3, Tailwind CSS v4, Bootstrap 5</p>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="p-4 rounded-3 h-100" style="background-color: #141414;">
-                        <h5 class="fw-light text-white mb-3"><i class="fa-solid fa-wrench me-2"></i>Tools</h5>
-                        <p class="text-secondary mb-0">Git, GitHub, Vercel</p>
-                    </div>
-                </div>
+      <div class="container">
+        <h4 class="fw-light mb-4">Skills</h4>
+        <div class="row g-4">
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100" style="background-color: #141414">
+              <h5 class="fw-light text-white mb-3">
+                <i class="fa-solid fa-code me-2"></i>Languages
+              </h5>
+              <p class="text-secondary mb-0">C / C++, JavaScript ES6</p>
             </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100" style="background-color: #141414">
+              <h5 class="fw-light text-white mb-3">
+                <i class="fa-solid fa-laptop-code me-2"></i>Frontend
+              </h5>
+              <p class="text-secondary mb-0">
+                HTML5, CSS3, Tailwind CSS v4, Bootstrap 5
+              </p>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="p-4 rounded-3 h-100" style="background-color: #141414">
+              <h5 class="fw-light text-white mb-3">
+                <i class="fa-solid fa-wrench me-2"></i>Tools
+              </h5>
+              <p class="text-secondary mb-0">Git, GitHub, Vercel</p>
+            </div>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- edu -->
     <section id="education" class="py-5">
-        <div class="container">
-            <h4 class="fw-light mb-4">Education</h4>
-            <div class="p-4 rounded-3" style="background-color: #141414;">
-                <div class="d-flex justify-content-between align-items-center flex-wrap">
-                    <div>
-                        <h4 class="fw-light mb-1">Daffodil Polytechnic Institute</h4>
-                        <p class="text-secondary mb-0">Diploma in Engineering in Computer Technology</p>
-                    </div>
-                    <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0">Feb 2023 - Present</span>
-                </div>
+      <div class="container">
+        <h4 class="fw-light mb-4">Education</h4>
+        <div class="p-4 rounded-3" style="background-color: #141414">
+          <div
+            class="d-flex justify-content-between align-items-center flex-wrap"
+          >
+            <div>
+              <h4 class="fw-light mb-1">Daffodil Polytechnic Institute</h4>
+              <p class="text-secondary mb-0">
+                Diploma in Engineering in Computer Technology
+              </p>
             </div>
+            <span class="badge px-3 py-2 fs-6 fw-light mt-2 mt-md-0"
+              >Feb 2023 - Present</span
+            >
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- contact -->
     <section id="contact" class="py-5">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-lg-12">
-                    <h4 class="fw-light mb-4">Contact Me</h4>
-                    <form action="https://api.web3forms.com/submit" method="POST" novalidate class="p-4 rounded-3" style="background-color: #141414;">
-                        <input type="hidden" name="access_key" value="4170eb6e-29a1-4f5c-8b4b-526bee84a397">
-                        <div class="mb-3">
-                            <label for="nameInput" class="form-label">Name</label>
-                            <input id="nameInput" type="text" name="name" autocomplete="off" class="form-control form-control-dark p-3" placeholder="Your Name" required>
-                        </div>
-                        <div class="mb-3">
-                            <label for="emailInput" class="form-label">Email</label>
-                            <input id="emailInput" type="email" name="email" autocomplete="off" class="form-control form-control-dark p-3" placeholder="Your Email" required>
-                        </div>
-                        <div class="mb-4">
-                          <div class="d-flex justify-content-between align-items-center mb-1">
-                            <label for="textInput" class="form-label">Message</label>
-                            <small id="msg-counter" style="color: #9ca3af;">0 / 2,000 (min 10)</small>
-                          </div>
-                            <textarea id="textInput" minlength="10" maxlength="2000" name="message" autocomplete="off" class="form-control form-control-dark p-3" style="max-height: 400px; min-height: 100px;" rows="5" placeholder="Your Message" required></textarea>
-                        </div>
-                        <div
-                          id="msg-box"
-                          aria-live="polite"
-                          class="text-center"
-                          style="height: 45px; transition: opacity 0.2s ease-in-out;"
-                        ></div>
-                        <button id="send-btn" type="submit" class="btn btns d-block mx-auto py-3">Send Message</button>
-                    </form>
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-12">
+            <h4 class="fw-light mb-4">Contact Me</h4>
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              novalidate
+              class="p-4 rounded-3"
+              style="background-color: #141414"
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="4170eb6e-29a1-4f5c-8b4b-526bee84a397"
+              />
+              <div class="mb-3">
+                <label for="nameInput" class="form-label">Name</label>
+                <input
+                  id="nameInput"
+                  type="text"
+                  name="name"
+                  autocomplete="off"
+                  class="form-control form-control-dark p-3"
+                  placeholder="Your Name"
+                  required
+                />
+              </div>
+              <div class="mb-3">
+                <label for="emailInput" class="form-label">Email</label>
+                <input
+                  id="emailInput"
+                  type="email"
+                  name="email"
+                  autocomplete="off"
+                  class="form-control form-control-dark p-3"
+                  placeholder="Your Email"
+                  required
+                />
+              </div>
+              <div class="mb-4">
+                <div
+                  class="d-flex justify-content-between align-items-center mb-1"
+                >
+                  <label for="textInput" class="form-label">Message</label>
+                  <small id="msg-counter" style="color: #9ca3af"
+                    >0 / 2,000 (min 10)</small
+                  >
                 </div>
-            </div>
+                <textarea
+                  id="textInput"
+                  minlength="10"
+                  maxlength="2000"
+                  name="message"
+                  autocomplete="off"
+                  class="form-control form-control-dark p-3"
+                  style="max-height: 400px; min-height: 100px"
+                  rows="5"
+                  placeholder="Your Message"
+                  required
+                ></textarea>
+              </div>
+              <div
+                id="msg-box"
+                aria-live="polite"
+                class="text-center"
+                style="height: 45px; transition: opacity 0.2s ease-in-out"
+              ></div>
+              <button
+                id="send-btn"
+                type="submit"
+                class="btn btns d-block mx-auto py-3"
+              >
+                Send Message
+              </button>
+            </form>
+          </div>
         </div>
+      </div>
     </section>
 
     <!-- footer -->
     <footer class="py-4 text-center">
-        <div class="container">
-            <div class="d-flex justify-content-center gap-4 mb-3">
-                <a
-                href="https://github.com/shohibulislam"
-                target="_blank"
-                class="social-link fs-5"
-                title="GitHub"
-                ><i class="ri-github-line"></i
-              ></a>
-              <a
-                href="https://www.linkedin.com/in/shohibul-islam-siam/"
-                target="_blank"
-                class="social-link fs-5"
-                title="LinkedIn"
-                ><i class="ri-linkedin-line"></i
-              ></a>
-              <a
-                href="mailto:shohibul602@gmail.com"
-                class="social-link fs-5"
-                title="Email"
-                ><i class="ri-mail-line"></i
-              ></a>
-            </div>
-            <p class="text-secondary mb-0">&copy; <span id="year">0000</span> Shohibul Islam Siam. <a class="text-secondary" target="_blank" href="https://www.github.com/shohibulislam/">Github</a></p>
+      <div class="container">
+        <div class="d-flex justify-content-center gap-4 mb-3">
+          <a
+            href="https://github.com/shohibulislam"
+            target="_blank"
+            class="social-link fs-5"
+            title="GitHub"
+            ><i class="ri-github-line"></i
+          ></a>
+          <a
+            href="https://www.linkedin.com/in/shohibul-islam-siam/"
+            target="_blank"
+            class="social-link fs-5"
+            title="LinkedIn"
+            ><i class="ri-linkedin-line"></i
+          ></a>
+          <a
+            href="mailto:shohibul602@gmail.com"
+            class="social-link fs-5"
+            title="Email"
+            ><i class="ri-mail-line"></i
+          ></a>
         </div>
+        <p class="text-secondary mb-0">
+          &copy; <span id="year">0000</span> Shohibul Islam Siam.
+          <a
+            class="text-secondary"
+            target="_blank"
+            href="https://www.github.com/shohibulislam/"
+            >Github</a
+          >
+        </p>
+      </div>
     </footer>
 
     <script
